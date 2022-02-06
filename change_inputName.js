@@ -16,9 +16,10 @@ function getConclusion() {
         let filteredNameUp = filteredName[0].toUpperCase() + filteredName.slice(1);
         filteredArrayName.push(filteredNameUp);
     }
-    console.log(filteredArrayName);
 
-    document.querySelector("input > lastname").value = filteredArrayName[0];
-    document.querySelector('#name').innerHTML = filteredArrayName[1];
-    document.querySelector('#patronymic').innerHTML = filteredArrayName[2];
+    document.getElementById("lastname").value = filteredArrayName[0];
+    document.getElementById("name").value = filteredArrayName[1];
+    document.getElementById("patronymic").value = filteredArrayName[2];
+
+    document.getElementById("userName").value = "";
 }
