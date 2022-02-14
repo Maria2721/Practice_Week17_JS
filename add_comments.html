@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .title {
+            margin-block-end: 2px;
+        }
+
+        button {
+            background-color: blue;
+            border: solid 1px black;
+            border-radius: 5px;
+            width: 40vw;
+        }
+
+        p {
+            margin-block-start: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Hi, How are you?</h3>
+    <div id="container">
+
+    </div>
+
+    <div>
+        <h4 class="title">Your new comment</h4>
+        <textarea id="newComments" style="width:40vw; height:20vh;"></textarea>
+        <p><button onclick="addComment()">Send</button></p>
+    </div>
+
+    <script src="add_comments.js">
+    </script>
+</body>
+
+</html>
