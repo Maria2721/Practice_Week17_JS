@@ -10,9 +10,8 @@ function addComment() {
 
 function checkSpam() {
     for (let i = 0; i < comments.length; i++) {
-        let spamV = comments[i].replace(/viagra/gi, "***");
-        let spamX = spamV.replace(/XXX/gi, "***")
-        comments[i] = spamX;
+        let spam = comments[i].replace(/viagra|xxx/gi, "***");
+        comments[i] = spam;
     }
 }
 
